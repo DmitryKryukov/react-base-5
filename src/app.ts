@@ -2,11 +2,11 @@ import './styles.scss';
 import { VNodeRenderer } from "./scripts/VNodeRenderer";
 
 class App {
-    private vDOMRenderer: VNodeRenderer;
+    private vNodeRenderer: VNodeRenderer;
 
     constructor() {
-        this.vDOMRenderer = new VNodeRenderer();
-        this.vDOMRenderer.renderComponentsFromJSON("./assets/component.json", document.querySelector("#app"));
+        this.vNodeRenderer = new VNodeRenderer();
+        this.vNodeRenderer.renderComponentsFromJSON("./assets/component.json", document.querySelector("#app"));
     }
 }
 
